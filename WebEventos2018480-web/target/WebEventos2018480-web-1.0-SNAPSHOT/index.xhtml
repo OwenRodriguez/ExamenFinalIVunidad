@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+       xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet name="css/jsfcrud.css"/>
+    </h:head>
+    <h:body>
+        Hello from Facelets
+        <br />
+        <h:link outcome="welcomePrimefaces" value="Primefaces welcome page" />
+        <br />
+        <h:link outcome="/areas/List" value="Show All Areas Items"/>
+        <br />
+        <h:link outcome="/cliente/List" value="Show All Cliente Items"/>
+        <br />
+        <h:link outcome="/detalle/List" value="Show All Detalle Items"/>
+        <br />
+        <h:link outcome="/factura/List" value="Show All Factura Items"/>
+        <br />
+        <h:link outcome="/meseros/List" value="Show All Meseros Items"/>
+        <br />
+        <h:link outcome="/productos/List" value="Show All Productos Items"/>
+        <br />
+        <h:link outcome="/reservaciones/List" value="Show All Reservaciones Items"/>
+        <br />
+        <h:link outcome="/sucursal/List" value="Show All Sucursal Items"/>
+        
+              <style type="text/css">
+    .ui-stack {
+        z-index: 1000;
+    }
+</style>
+
+<p:stack icon="/resources/demo/images/dock/stack.png" expanded="true">
+    <p:menuitem value="Welcome " icon="/resources/images/welcome.png"  outcome="welcomePrimefaces"/>
+    <p:menuitem value="Areas" icon="/resources/images/Areas.png" outcome="/areas/List"/>
+    <p:menuitem value="Cliente" icon="/resources/images/Cliente.png" outcome="/cliente/List"  />
+    <p:menuitem value="Detalle" icon="/resources/images/Detalle.png" outcome="/detalle/List"/>
+    <p:menuitem value="Factura" icon="/resources/images/Factura.png" outcome="/factura/List"/>
+    <p:menuitem value="Meseros" icon="/resources/images/Meseros.png"  outcome="/meseros/List" />
+    <p:menuitem value="Productos" icon="/resources/images/Productos.png"  outcome="/productos/List" />
+    <p:menuitem value="Reservaciones" icon="/resources/images/Reservaciones.png"  outcome="/reservaciones/List" />
+    <p:menuitem value="Sucursal" icon="/resources/images/Sucursal.png"  outcome="/sucursal/List" />
+
+
+</p:stack>
+
+
+    </h:body>
+
+
+
+
+
+
+
+
+</html>
+
